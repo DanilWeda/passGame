@@ -1,23 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
+  font-family: 'Dongle', sans-serif;
+  background: rgb(61, 59, 59);
+  .title {
+    color: rgb(204, 204, 204);
+    //  background: rgb(110, 103, 103);
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    border: 3px solid rgb(204, 204, 204);
+  }
   .squares {
     max-height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 5px;
     align-items: center;
     justify-content: center;
-    max-width: 230px;
+    max-width: 30%;
+    //  background: rgb(110, 103, 103);
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid rgb(204, 204, 204);
     .square {
-      width: 16px;
-      height: 16px;
-      border: 1px solid #000;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 2px;
+    }
+    .filled {
+      background: rgb(204, 204, 204);
     }
   }
-  .black {
-    background: #000;
+  .reload {
+    font-size: 20pt;
+    margin-top: 20px;
+    color: rgb(204, 204, 204);
+    background: rgb(41, 12, 12);
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    border: 3px solid rgb(204, 204, 204);
+  }
+  .reload:hover {
+    padding: 3px;
+    cursor: pointer;
+    background: rgb(61, 59, 59);
+    border: 1px solid rgb(204, 204, 204);
   }
 }
