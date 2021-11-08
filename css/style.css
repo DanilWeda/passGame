@@ -28,7 +28,7 @@ body .title {
 }
 
 body .squares {
-  max-height: 80vh;
+  max-height: 90vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[10];
@@ -42,8 +42,7 @@ body .squares {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 30%;
-  width: 250px;
+  max-width: 80%;
   border-radius: 20px;
   text-align: center;
   padding: 10px 20px;
