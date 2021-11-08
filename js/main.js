@@ -1,7 +1,7 @@
 /// get html btn for reload game 
 const btn = document.getElementById('reload')
 
-// var wich we need for work with cycle;
+// var which we need for work with cycle;
 let howSquaresMade = 10;
 const board = document.getElementById('squares')
 const stateSquare = [];
@@ -18,7 +18,7 @@ function create() {
 	return hello
 }
 
-// cycle wich add created element in state Massive, and add lisener for evryone squares.
+// cycle which add created element in state Massive, and add lisener for evryone squares.
 for (let i = 0; i < howSquaresMade; i++) {
 	stateSquare[i] = [];
 	for (let j = 0; j < howSquaresMade; j++) {
@@ -27,7 +27,7 @@ for (let i = 0; i < howSquaresMade; i++) {
 }
 
 
-//function wich parse all of square 
+//function which parse all of square 
 function parse() {
 	for (let i = 0; i < stateSquare.length; i++) {
 
